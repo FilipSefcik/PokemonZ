@@ -1,0 +1,25 @@
+Hra – tak ako wof, na zaciatku hrac povie svoje meno a vyberie si starter pokemona
+Hrac – neobmedzeny inventar (pokeball, potion, revive), pokemoni pri sebe (max 6)
+Item – riesene cez Interface predpokladam
+PC – storage pre pokemonov, neobmedzeny, hrac tam moze dat alebo si odtial vybrat pokemona,
+    ak hrac chyti pokemona a ma pri sebe 6 pokemonov,
+    chyteni pokemon automaticky pojde do pc (PC bude mozno Singleton),
+    bude sa nachadzat v kazdom pokecentre
+Lokacie – mozes sa medzi nimi presuvat, dva typy – mesta a priroda,
+    v meste budu budovy  (obchod, pokecentrum, gym),
+    v prirode hrac moze chytat pokemonov alebo natrafi na hraca s ktorym bude bojovat,
+    niektore lokacie sa mozu otvorit az potom co hrac porazi gym v danom meste
+Mapa – nieco v zmysle wof
+Budovy – v zmysle npc ako vo wof,
+    podla toho kde sa rozhodnes vstupit to sa ti ponukne
+    (v obchode si mozes kupit veci, v pokecentre mas pristup k PC alebo si vyhealit pokemonov, v gyme vyzves gym leadera)
+Pokemon -  ma zivoty, utoky, svoj typ (typ 1 & typ 2),
+    prezyvku (otazka pre podrobnejsiu pracu: evolucie? Leveling? Ucenie sa novych utokov? HM & TM?
+        Dovolime hracovi chytit viacero rovnakych pokemonov, ak ano ako ich bude rozoznavat?)
+Battle – v boji bude moct hrac mat na vyber (zautocit, pouzit item, utiect alebo vymenit pokemona),
+    podla toho akeho typu pouzije pokemon utok a akeho typu je target sa vypocita damage
+Utok – ma svoj typ a pocet pouziti
+Typ – mozno enum, typ sa moze priradit utoku alebo pokemonovi,
+    typ vie o sebe na co je slaby a na co je silny, v suboji metody typu (getWeakness, getAdvantage)
+Pokedex – zoznam vsetkych pokemonov ktore existuju z ktorej budeme brat
+    pokemonov do suboja, ci uz divokych alebo co maju protivnici
